@@ -1,0 +1,180 @@
+{
+  "Log to the console": {
+    "prefix": "clg",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log to the console"
+  },
+  "Log warning to console": {
+    "prefix": "warn",
+    "body": ["console.warn($1);", "$0"],
+    "description": "Log warning to the console"
+  },
+  "Log error to console": {
+    "prefix": "error",
+    "body": ["console.error($1);", "$0"],
+    "description": "Log error to the console"
+  },
+  "Throw Exception": {
+    "prefix": "throw",
+    "body": ["throw new Error(\"$1\");", "$0"],
+    "description": "Throw Exception"
+  },
+  "Import React": {
+    "prefix": "imr",
+    "body": "import React from 'react';",
+    "description": "Import React"
+  },
+  "Import React with Hooks": {
+    "prefix": "imrh",
+    "body": "import React, { ${1:useState} } from 'react';",
+    "description": "Import React with hooks"
+  },
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      "function ${1:ComponentName}() {",
+      "  return (",
+      "    <div>",
+      "      ${0}",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Basic React function component"
+  },
+  "React Function Component with Props": {
+    "prefix": "rfcp",
+    "body": [
+      "function ${1:ComponentName}({ ${2:prop} }) {",
+      "  return (",
+      "    <div>",
+      "      ${0}",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "React function component with props"
+  },
+  "useState Hook": {
+    "prefix": "useState",
+    "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue});",
+    "description": "React useState hook"
+  },
+  "useEffect Hook": {
+    "prefix": "useEffect",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:// effect code}",
+      "  ${2:return () => {",
+      "    // cleanup code",
+      "  \\};}",
+      "}, [${3:dependencies}]);"
+    ],
+    "description": "React useEffect hook"
+  },
+  "useContext Hook": {
+    "prefix": "useContext",
+    "body": "const ${1:context} = useContext(${2:Context});",
+    "description": "React useContext hook"
+  },
+  "useRef Hook": {
+    "prefix": "useRef",
+    "body": "const ${1:ref} = useRef(${2:initialValue});",
+    "description": "React useRef hook"
+  },
+  "useCallback Hook": {
+    "prefix": "useCallback",
+    "body": "const ${1:memoizedCallback} = useCallback(() => {${2}}, [${3:dependencies}]);",
+    "description": "React useCallback hook"
+  },
+  "useMemo Hook": {
+    "prefix": "useMemo",
+    "body": "const ${1:memoizedValue} = useMemo(() => ${2:computeValue}, [${3:dependencies}]);",
+    "description": "React useMemo hook"
+  },
+  "React Fragment": {
+    "prefix": "frag",
+    "body": ["<>", "  ${0}", "</>"],
+    "description": "React fragment shorthand"
+  },
+  "Event Handler": {
+    "prefix": "handler",
+    "body": ["const handle${1:Event} = (${2:event}) => {", "  ${0}", "};"],
+    "description": "Generic event handler"
+  },
+  "Click Handler": {
+    "prefix": "onClick",
+    "body": "onClick={${1:handleClick}}",
+    "description": "onClick event handler"
+  },
+  "Change Handler": {
+    "prefix": "onChange",
+    "body": "onChange={${1:handleChange}}",
+    "description": "onChange event handler"
+  },
+  "Submit Handler": {
+    "prefix": "onSubmit",
+    "body": "onSubmit={${1:handleSubmit}}",
+    "description": "onSubmit event handler"
+  },
+  "PropTypes Import": {
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types';",
+    "description": "Import PropTypes"
+  },
+  "PropTypes Declaration": {
+    "prefix": "ptypes",
+    "body": [
+      "${1:ComponentName}.propTypes = {",
+      "  ${2:prop}: PropTypes.${3:string},",
+      "};"
+    ],
+    "description": "Component PropTypes declaration"
+  },
+  "React.memo": {
+    "prefix": "memo",
+    "body": "export default React.memo(${1:Component});",
+    "description": "React.memo for memoization"
+  },
+  "Conditional Rendering": {
+    "prefix": "cond",
+    "body": "{${1:condition} ? ${2:true} : ${3:false}}",
+    "description": "Ternary conditional rendering"
+  },
+  "Map Function for Lists": {
+    "prefix": "map",
+    "body": [
+      "{${1:array}.map((${2:item}) => (",
+      "  ${3:<div key={${4:item.id}>${5:item.name}</div>}",
+      "))}"
+    ],
+    "description": "Array map for rendering lists"
+  },
+  "Styled Component": {
+    "prefix": "styled",
+    "body": ["const ${1:StyledDiv} = styled.div`", "  ${0}", "`;"],
+    "description": "Create a styled component"
+  },
+  "Context Provider": {
+    "prefix": "context",
+    "body": [
+      "const ${1:ContextName} = React.createContext();",
+      "",
+      "export function ${2:ProviderName}Provider({ children }) {",
+      "  ${3:// state and logic}",
+      "  return (",
+      "    <${1:ContextName}.Provider value={${4:value}}>",
+      "      {children}",
+      "    </${1:ContextName}.Provider>",
+      "  );",
+      "}",
+      "",
+      "export const use${2:ProviderName} = () => useContext(${1:ContextName});"
+    ],
+    "description": "Create context with provider and hook"
+  }
+}

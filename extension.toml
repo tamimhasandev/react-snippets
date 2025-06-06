@@ -1,0 +1,7 @@
+id = "react-snippets"
+name = "React Snippets"
+version = "1.0.0"
+schema_version = 1
+authors = ["Tamim Hasan <tamimhasandev@gmail.com>"]
+description = "React snippets for zed code editor"
+repository = "https://github.com/tamimhasandev/react-snippets"
