@@ -1,6 +1,6 @@
 id = "react-snippets"
 name = "React Snippets"
-version = "1.0.2"
+version = "1.0.3"
 schema_version = 1
 authors = ["Tamim Hasan <me@tamimhasan.com>"]
 description = "React snippets for zed code editor"
