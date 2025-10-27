@@ -1,0 +1,17 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release-extension:
+    name: Release Zed Extension
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huacnlee/zed-extension-action@v1
+        with:
+          extension-name: react-snippets
+
+          push-to: tamimhasandev/extensions
+        env:
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
