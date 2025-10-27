@@ -4,6 +4,11 @@
     "body": ["console.log($1);", "$0"],
     "description": "Log to the console"
   },
+  "Log to the test": {
+    "prefix": "cls",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log to the console"
+  },
   "Log warning to console": {
     "prefix": "warn",
     "body": ["console.warn($1);", "$0"],
