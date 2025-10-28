@@ -23,24 +23,26 @@ Type the prefix and press \`Tab\` to expand the snippet. Use \`Tab\` and \`Shift
 
 ### Component Scaffolding
 
-| Prefix   | Description           | Snippet Preview                               |
-| -------- | --------------------- | --------------------------------------------- |
-| \`rfc\`  | Function component    | \`function Component() { ... }\`              |
-| \`rfcp\` | Component with props  | \`function Component({ prop }) { ... }\`      |
-| \`rfce\` | Component with export | \`export default function Component() {...}\` |
-| \`memo\` | Memoized component    | \`React.memo(Component)\`                     |
-| \`frag\` | React Fragment        | \`<></>\`                                     |
+| Prefix   | Description                       | Snippet Preview                                 |
+| -------- | --------------------------------- | ----------------------------------------------- |
+| \`rfc\`  | Function component                | \`function Component() { ... }\`                |
+| \`rfce\` | Default Export Function component | \`default export function Component() { ... }\` |
+| \`rfcp\` | Component with props              | \`function Component({ prop }) { ... }\`        |
+| \`rfce\` | Component with export             | \`export default function Component() {...}\`   |
+| \`memo\` | Memoized component                | \`React.memo(Component)\`                       |
+| \`frag\` | React Fragment                    | \`<></>\`                                       |
+| \`rsc\`  | React Stateless Component         | \`function Component() { ... }\`                |
 
 ### React Hooks
 
-| Prefix          | Description      | Snippet Preview                          |
-| --------------- | ---------------- | ---------------------------------------- |
-| \`useState\`    | State hook       | \`const [state, setState] = useState()\` |
-| \`useEffect\`   | Effect hook      | \`useEffect(() => {...}, [])\`           |
-| \`useContext\`  | Context hook     | \`const ctx = useContext(Context)\`      |
-| \`useRef\`      | Ref hook         | \`const ref = useRef()\`                 |
-| \`useMemo\`     | Memoization hook | \`const value = useMemo(() => ...)\`     |
-| \`useCallback\` | Callback hook    | \`const cb = useCallback(() => ...)\`    |
+| Prefix   | Description      | Snippet Preview                          |
+| -------- | ---------------- | ---------------------------------------- |
+| \`rsta\` | State hook       | \`const [state, setState] = useState()\` |
+| \`reff\` | Effect hook      | \`useEffect(() => {...}, [])\`           |
+| \`rcon\` | Context hook     | \`const ctx = useContext(Context)\`      |
+| \`rref\` | Ref hook         | \`const ref = useRef()\`                 |
+| \`rmem\` | Memoization hook | \`const value = useMemo(() => ...)\`     |
+| \`rcal\` | Callback hook    | \`const cb = useCallback(() => ...)\`    |
 
 ### Event Handlers
 
